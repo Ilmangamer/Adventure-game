@@ -14,14 +14,15 @@ play = input()
 if play == 'no':
 	print("Maybe another time?")
 	print('Session has ENded')
-if play:
+
+if play == 'no':
 	exit(-1)
 
 elif play == 'yes':
 	print("You are welcome")
 	print('First question')
 	print('You are going to the beach, with youre friend')
-	print('The beach is at the left, but then youre friend decides to go to the right. \n will you join him?[y/n]')
+	print('The beach is at the left, but then youre friend decides to go to the right. \n will you join him?[y/n], [if yes, type yes and hit enter 4 times.]')
 
 
 
@@ -29,13 +30,13 @@ Yes_Or_No = input()
 
 
 if Yes_Or_No == 'no':
-	print('So you went to the beach alone is this a wise decison?')
+	print('So you went to the beach alone is this a wise decison?, [wise]/[not wise]')
 
 
 #Beachmonster
 
 dec = input()
-if dec == 'wise':
+if dec == 'wise' and 'not wise':
 	print('You encounter a scary beach monster, will you attack [y/n]?')
 you_attack = input()
 
@@ -47,7 +48,7 @@ if you_attack == 'yes':
 
 elif you_attack == 'no':
 	print('Well that\'s sad, anyways done is done.')
-	print('You encounter a scary beach monster, will you attack? [a/n.attack]?')
+	print('You encounter a scary beach monster, will you attack? [attack/not attack]?')
 
 
 encounter = input()
@@ -63,20 +64,21 @@ elif encounter == 'not attack':
 	print('.....')
 	print('\n \n \n \n You Lose! ha!')
 
+# The equaliser
 if encounter:
 	exit(0)
 
-# The equaliser
+
 
    
 
 #Friend
 
-chrush = input('You and youre friend are encoutring youre chrush [Ok/Not OK]')
+chrush = input("You and youre friend are encoutring youre chrush [Ok/Not Ok], 'type here' ")
 
 
 
-if chrush == 'OK':
+if chrush == 'Ok':
 	print('Youre bestfriend is kissing youre chrush, still [Ok/Not Ok]')
 still_okay = input()
 
